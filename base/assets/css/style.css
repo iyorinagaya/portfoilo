@@ -26,12 +26,11 @@ p {
 }
 
 section {
-  min-height: 700px;
+  padding: 150px 0;
 }
 
 /* wrapper */
 .wrapper {
-  padding: 60px 0 90px 0;
   width: 980px;
   margin: 0 auto;
   text-align: center;
@@ -41,6 +40,7 @@ section {
   font-size: 36px;
 }
 
+/* btn */
 .btn {
   display: flex;
   align-items: center;
@@ -57,6 +57,77 @@ section {
 
 .btn:hover {
   opacity: 0.8;
+}
+
+/* humburger */
+.toggleBtn {
+  display: none;
+  position: fixed;
+  top: 15px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  transition: all .5s;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.toggleBtn span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  transition: all .5s;
+}
+
+.toggleBtn span:nth-child(1) {
+  top: 4px;
+}
+.toggleBtn span:nth-child(2) {
+  top: 14px;
+}
+
+.toggleBtn span:nth-child(3) {
+  bottom: 4px;
+}
+
+.toggleBtn.open span {
+  background-color: #ffffff;
+}
+
+.toggleBtn.open span:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(-315deg);
+  transform: translateY(10px) rotate(-315deg);
+}
+
+.toggleBtn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.toggleBtn.open span:nth-child(3) {
+  -webkit-transform: translateY(-10px) rotate(315deg);
+  transform: translateY(-10px) rotate(315deg);
+}
+
+.mask {
+  display: none;
+  transition: all .5s;
+}
+
+.mask.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .8;
+  z-index: 2;
+  cursor: pointer;
 }
 
 /*----------------------------------------*/
@@ -99,13 +170,13 @@ header .navItem:hover {
 /* firstView */
 /*----------------------------------------*/
 .firstView {
-  height: 700px;
+  height: 750px;
   background-color: #C4C4C4;
 }
 
 .firstView .firstViewWrapper {
   margin: 0 auto;
-  height: 700px;
+  height: 750px;
   text-align: center;
 }
 
@@ -121,6 +192,17 @@ header .navItem:hover {
   font-size: 24px;
   color: #ffffff;
   margin-top: 20px;
+}
+
+/*----------------------------------------*/
+/* overview */
+/*----------------------------------------*/
+.overview {
+  height: 500px;
+}
+
+.overview .text {
+  margin-top: 50px;
 }
 
 /*----------------------------------------*/
@@ -165,7 +247,13 @@ header .navItem:hover {
 /* works */
 /*----------------------------------------*/
 .works {
+  background-color: #ffffff;
+}
+
+.works .wrapper {
   background-color: #C4C4C4;
+  padding: 50px;
+  border-radius: 5px;
 }
 
 .works .explanation {
@@ -240,7 +328,14 @@ header .navItem:hover {
 /*----------------------------------------*/
 .contact {
   background-color: #a9dbff;
-  height: 400px;
+}
+
+.contact .wrapper {
+  background-color: #ffffff;
+  padding: 50px;
+  border-color: #C4C4C4;
+  border-style: inset;
+  border-width: 5px;
 }
 
 .contact h2 {
@@ -342,11 +437,58 @@ footer p {
 }
 
 @media (max-width: 770px) {
+  .wrapper h2 {
+    font-size: 26px;
+  }
+
+  header nav {
+    position: fixed;
+    z-index : 3;
+    background-color: #C4C4C4;
+    top  : -150px;
+    height: 150px;
+    left : 0;
+    text-align: center;
+    transition: all 0.6s;
+    width: 100%;
+  }
+  
+  header .navList {
+    padding-top: 30px;
+    width: 96%;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+  
+  header .navItem {
+    width: 20%;
+    border-bottom: solid 1px;
+  }
+  
+  header .navItem a {
+    display: block;
+    padding: 10px 0;
+  }
+  
+  .toggleBtn {
+    display: block;
+  }
+
   .works .card {
     width: 80%;
   }
 
   .works .card+.card {
     margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  header .navList {
+    width: 80%;
+  }
+
+  header .navItem {
+    width: 40%;
   }
 }

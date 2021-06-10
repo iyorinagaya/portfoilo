@@ -14,15 +14,19 @@
   <header>
     <div class="headerWrapper">
       <nav>
-        <ul class="navList">
+        <ul class="navList" id="toggleNav">
           <li class="navItem"><a href="index.html">TOP</a></li>
-          <li class="navItem"><a href="#profile">PROFILE</a></li>
+          <li class="navItem"><a href="profile.html">PROFILE</a></li>
           <li class="navItem"><a href="#works">WORKS</a></li>
-          <li class="navItem"><a href="#skills">SKILLS</a></li>
           <li class="navItem"><a href="contact_form.html">CONTACT</a></li>
         </ul>
       </nav>
-    </div>
+      <div class="toggleBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="mask"></div>
   </header>
   <div class="firstView">
     <div class="firstViewWrapper">
@@ -32,15 +36,15 @@
       </div>
     </div>
   </div>
-  <section class="profile" id="profile">
-    <div class="profileWrapper wrapper">
-      <h2>- PROFILE -</h2>
-      <div class="profileItems">
-        <div class="image"><img src="assets/image/tynebridge.jpg" alt="myImage"></div>
-        <div class="description">
-          <p class="name">長屋いより</p>
-          <p class="text">自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介</p>
-        </div>
+  <section class="overview">
+    <div class="wrapper">
+      <h2>- SITE OVERVIEW -</h2>
+      <div class="text">
+        <p>IYORI NAGAYAのポートフォリオサイトです。</p>
+        <br>
+        <p>フロントエンドのエンジニアとして、WEB制作等を行っています。</p>
+        <br>
+        <p>私のプロフィール、スキル、制作物を掲載しておりますので、是非是非ご覧になっていただけたら嬉しいです。</p>
       </div>
     </div>
   </section>
@@ -65,42 +69,21 @@
       <p class="btnWrap"><a class="btn" href="#">もっと見る</a></p>
     </div>
   </section>
-  <section class="skills" id="skills">
-    <div class="wrapper">
-      <h2>- SKILLS -</h2>
-      <div class="skillBoxes">
-        <div class="frontend box">
-          <h3>フロントエンド</h3>
-          <p>説明説明説明説明説明説明説明説明説明説明</p>
-          <ul class="skillList">
-            <li>HTML/CSS</li>
-            <li>JavaScript (JQuery)</li>
-            <li>WordPress</li>
-          </ul>
-        </div>
-        <div class="others box">
-          <h3>その他</h3>
-          <p>説明説明説明説明説明説明説明説明説明説明</p>
-          <ul class="skillList">
-            <li>Git (Github)</li>
-            <li>Linux</li>
-            <li>English</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="contact">
+
+  <section class="contact">
     <div class="wrapper">
       <h2>CONTACT</h2>
-      <p>お問い合わせは、フォームをご利用ください。</p>
+      <p>気になる点等、お気軽にご連絡ください。</p>
+      <p>お問い合わせには、フォームをご利用しております。</p>
       <p class="btnWrap"><a class="btn" href="contact_form.html">問い合わせる</a></p>
     </div>
-  </div>
+  </section>
   <footer>
     <div class="footerWrapper">
-      <p>©2021 Iyori Nagaya</p>
+      <p>©copyright Iyori Nagaya</p>
     </div>
   </footer>
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/index.js"></script>
 </body>
 </html>
