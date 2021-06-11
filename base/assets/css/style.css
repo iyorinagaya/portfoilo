@@ -17,7 +17,7 @@ a {
   text-decoration: none;
 }
 
-h1, h2 {
+h1, h2, h3 {
   margin: 0;
 }
 
@@ -209,7 +209,14 @@ header .navItem:hover {
 /* profile */
 /*----------------------------------------*/
 .profile {
-  background-color: #ffffff;
+  padding: 100px 0;
+}
+
+.profile .wrapper {
+  border-color: #C4C4C4;
+  border-style: inset;
+  border-width: 5px;
+  padding: 50px 0;
 }
 
 .profile .profileItems {
@@ -217,6 +224,10 @@ header .navItem:hover {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
+}
+
+.profile .image {
+  margin: auto 0;
 }
 
 .profile img {
@@ -230,18 +241,47 @@ header .navItem:hover {
   margin: 30px auto;
 }
 
-.profile p {
-  text-align: left;
+.profile h3 {
+  font-size: 24px;
+  text-align: center;
 }
 
-.profile .name {
-  font-size: 24px;
+.profile .introduction p {
+  text-align: left;
 }
 
 .profile .text {
   margin-top: 20px;
 }
 
+.skills {
+  margin-top: 40px;
+}
+
+.skills .skillBoxes {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.skills .box {
+  width: 45%;
+  height: auto;
+  text-align: left;
+}
+
+.skills .box p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.skills .others {
+  margin-left: 50px;
+}
+
+.skills .skillList {
+  margin-top: 10px;
+}
 
 /*----------------------------------------*/
 /* works */
@@ -253,75 +293,68 @@ header .navItem:hover {
 .works .wrapper {
   background-color: #C4C4C4;
   padding: 50px;
-  border-radius: 5px;
+  border-color: #C4C4C4;
+  border-style: inset;
+  border-width: 5px;
 }
 
 .works .explanation {
   margin-top: 40px;
 }
 
-.works .cards {
+.works .btn {
+  margin-top: 90px;
+}
+
+.cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 60px;
-  padding-bottom: 90px;
 }
 
-.works .card .work {
+.card .work {
   border-radius: 2px;
   background-size: cover;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
 }
 
-.works .card img {
+.card img {
   width: 100%;
   height: auto;
 }
 
-
 /*----------------------------------------*/
-/* skills */
+/* workssingle */
 /*----------------------------------------*/
-.skills .skillBoxes {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 60px;
+.worksSingle {
+  padding: 100px 0;
 }
 
-.skills .box {
-  background-color: #C4C4C4;
-  border-radius: 2px;
+.worksSingle .card {
   width: 45%;
-  height: auto;
-  padding: 30px 20px 40px;
 }
 
-.skills .others {
-  margin-left: 80px;
+.worksSingle .explanation {
+  margin-top: 30px;
 }
 
-.skills h3 {
-  color: #4e4e4e;
-  margin: 0;
+.worksSingle .card .text {
+  margin-top: 30px;
+  padding: 0 20px;
+  text-align: left;
 }
 
-.skills p {
-  color: #4e4e4e;
-  padding-top: 20px;
+.worksSingle .card:nth-child(n+3) {
+  margin-top: 50px;
 }
 
-.skills .skillList {
-  color: #4e4e4e;
-  text-align: center;
-  margin: 30px auto 0;
+.worksSingle .wrapper {
+  padding: 50px;
+  border-color: #C4C4C4;
+  border-style: inset;
+  border-width: 5px;
 }
-
-.skills .skillList li+li {
-  padding-top: 20px;
-}
-
 
 /*----------------------------------------*/
 /* contact */
@@ -382,13 +415,21 @@ footer p {
 /*----------------------------------------*/
 /* responsive */
 /*----------------------------------------*/
-@media (min-width: 979px) {
+@media (min-width: 981px) {
   header .navItem {
     font-size: 24px;
   }
 
   .works .card {
     width: 30%;
+  }
+
+  .profile .wrapper {
+    padding: 50px 100px;
+  }
+
+  .profile h3 {
+    text-align: left;
   }
 
   .profile .profileItems {
@@ -410,13 +451,17 @@ footer p {
   .wrapper {
     width: 96%;
   }
+
+  .profile .description {
+    width: 80%;
+  }
   
   .profile .name {
     text-align: center;
   }
 
-  .profile .text {
-    padding: 0 100px;
+  .profile .introduction .position {
+    text-align: center;
   }
 
   .works .card {
@@ -428,11 +473,7 @@ footer p {
   }
 
   .skills .box {
-    width: 70%;
-  }
-  
-  .skills .others {
-    margin: 50px auto 0;
+    width: auto;
   }
 }
 
@@ -481,6 +522,10 @@ footer p {
   .works .card+.card {
     margin-top: 30px;
   }
+
+  .worksSingle .wrapper {
+    padding: 30px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -490,5 +535,25 @@ footer p {
 
   header .navItem {
     width: 40%;
+  }
+
+  .skills .skillBoxes {
+    flex-wrap: wrap;
+  }
+
+  .skills .box {
+    width: 100%;
+  }
+
+  .skills .others {
+    margin: 20px auto 0;
+  }
+
+  .worksSingle .card {
+    width: 100%;
+  }
+
+  .worksSingle .card + .card {
+    margin-top: 50px;
   }
 }
