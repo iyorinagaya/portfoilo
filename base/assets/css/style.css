@@ -25,6 +25,10 @@ p {
   margin: 0;
 }
 
+dd {
+  margin: 0;
+}
+
 section {
   padding: 150px 0;
 }
@@ -388,9 +392,152 @@ header .navItem:hover {
 /*----------------------------------------*/
 /* contact_form */
 /*----------------------------------------*/
+.formWrapper {
+  margin: 100px auto;
+}
+
+.formWrapper main {
+  margin: 0 auto;
+  width: 700px;
+}
+
+.formWrapper form {
+  margin-top: 40px;
+}
+
+.formWrapper .text {
+  margin-top: 40px;
+}
+
+.formWrapper .mw_wp_form {
+  margin-top: 40px;
+}
+
+.formWrapper form .item + .item {
+  margin-top: 25px;
+}
+
+.formWrapper form p {
+  text-align: left;
+}
+
+.formWrapper form span {
+  color: #cf2626;
+  margin-left: 10px;
+}
+
+.formWrapper form textarea {
+  height: 326px;
+  resize: none;
+}
+
+.formWrapper .inputField {
+  width: 100%;
+  border: solid 1px #cccccc;
+  outline: none;
+  display: block;
+}
+
+.formWrapper .btnWrap {
+  margin-top: 50px;
+}
+
+
 form .btn {
-  width: 200px;
+  width: 250px;
   border: none;
+}
+
+/*----------------------------------------*/
+/* contact_confirm */
+/*----------------------------------------*/
+.confirmWrapper {
+  margin: 100px auto 200px;
+}
+
+.confirmWrapper main {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.confirmWrapper .text {
+  margin-top: 40px;
+}
+
+.confirmWrapper .text strong {
+  font-weight: bold;
+}
+
+.confirmWrapper .tableWrap {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.confirmWrapper .tableWrap dl:not(:last-child) {
+  display: flex;
+  padding-top: 20px;
+}
+
+.confirmWrapper .tableWrap dl + dl {
+  border-top: solid 1px #cccccc;
+}
+
+.confirmWrapper .tableWrap .inquiry {
+  padding: 20px 0 10px;
+}
+
+.confirmWrapper .tableWrap .inquiry dd {
+  margin-top: 20px;
+}
+
+.confirmWrapper .tableWrap dt {
+  width: 240px;
+}
+
+.confirmWrapper .tableWrap dd {
+  width: 398px;
+}
+
+.confirmWrapper .btnWrap {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.confirmWrapper .btn.goBack {
+  background-color: #ffffff;
+  color: #000;
+  border:solid 1px;
+}
+
+.confirmWrapper .btn {
+  width: 190px;
+  border: none;
+}
+
+.confirmWrapper .btnWrap p + p {
+  margin-left: 20px;
+}
+
+/*----------------------------------------*/
+/* cntact_complete */
+/*----------------------------------------*/
+.completeWrapper {
+  margin: 100px auto 600px;
+}
+
+.completeWrapper .text {
+  margin: 24px auto 0;
+}
+
+.completeWrapper .btnWrap {
+  margin-top: 40px;
+}
+
+.completeWrapper .btn {
+  background-color: #ffffff;
+  color: #000;
+  border:solid 1px;
 }
 
 /*----------------------------------------*/
@@ -482,6 +629,10 @@ footer p {
     font-size: 26px;
   }
 
+  .wrapper main {
+    width: 96%;
+  }
+
   header nav {
     position: fixed;
     z-index : 3;
@@ -526,6 +677,14 @@ footer p {
   .worksSingle .wrapper {
     padding: 30px;
   }
+
+  .confirmWrapper .tableWrap dl:not(:last-child) {
+    display: block;
+  }
+
+  .confirmWrapper .tableWrap dl:not(:last-child) dd {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -555,5 +714,21 @@ footer p {
 
   .worksSingle .card + .card {
     margin-top: 50px;
+  }
+
+  .confirmWrapper .tableWrap dd {
+    width: 96%;
+  }
+
+  .confirmWrapper .btnWrap {
+    flex-wrap: wrap;
+  }
+
+  .confirmWrapper .btnWrap p {
+    width: 80%;
+  }
+
+  .confirmWrapper .btnWrap p + p {
+    margin: 20px 0 0;
   }
 }
