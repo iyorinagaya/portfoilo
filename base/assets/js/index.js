@@ -1,31 +1,32 @@
 $(function(){
 
+  function changeNav() {
 
-  $('.toggleBtn').on('click', function() {
-    const $this = $(this);
-    const $nav = $('header').find('nav');
-
-    $this.toggleClass('open');
-
-    $('.mask').toggleClass('active');
-
-    if($this.hasClass('open')) {
-      $nav.animate({
-        top: 0
-      }, 200);
-    } else {
-      $nav.animate({
-        top: -150
-      }, 200);
-    }
+    function toggleNav() {
+      const $this = $(this);
+      const $nav = $('header').find('nav');
   
+      $this.toggleClass('open');
+      $('.mask').toggleClass('active');
+  
+      if($this.hasClass('open')) {
+        $nav.animate({
+          top: 0
+        }, 200);
+      } else {
+        $nav.animate({
+          top: -150
+        }, 200);
+      }
+    }
+    $('.toggleBtn').on('click', toggleNav);
 
-    return false;
+  }
 
-    // if($(this).hasClass('open') {
-
-    // }
-
-  });
+  function init(){
+    changeNav();
+  }
+  
+  init();
 
 });
