@@ -15,12 +15,14 @@
   <header>
     <div class="headerWrapper">
       <nav>
-        <ul class="navList" id="toggleNav">
-          <li class="navItem"><a href="index.html">TOP</a></li>
-          <li class="navItem"><a href="profile.html">PROFILE</a></li>
-          <li class="navItem"><a href="works.html">WORKS</a></li>
-          <li class="navItem"><a href="contact_form.html">CONTACT</a></li>
-        </ul>
+        <?php wp_nav_menu(
+          array(
+            'theme_location' => 'global',
+            'container' => false,
+            'menu_class' => 'navList',
+          )
+        );
+        ?>
       </nav>
       <div class="toggleBtn">
         <span></span>

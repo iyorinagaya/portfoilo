@@ -239,9 +239,6 @@ main .explanation {
 
 .works .wrapper {
   background-color: #C4C4C4;
-  border-color: #C4C4C4;
-  border-style: inset;
-  border-width: 5px;
 }
 
 .works .cards {
@@ -293,9 +290,6 @@ main .explanation {
 }
 
 .profile .wrapper {
-  border-color: #C4C4C4;
-  border-style: inset;
-  border-width: 5px;
   padding: 50px 0;
 }
 
@@ -373,9 +367,6 @@ main .explanation {
 .contact .wrapper {
   background-color: #ffffff;
   padding: 50px;
-  border-color: #C4C4C4;
-  border-style: inset;
-  border-width: 5px;
 }
 
 .contact h2 {
