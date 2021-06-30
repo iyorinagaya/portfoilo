@@ -403,11 +403,7 @@ s
   margin-top: 25px;
 }
 
-.formWrapper form p {
-  text-align: left;
-}
-
-.formWrapper form span {
+.formWrapper form .required {
   color: #cf2626;
   margin-left: 10px;
 }
