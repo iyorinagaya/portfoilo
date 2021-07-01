@@ -45,7 +45,7 @@
         <h2>CONTACT</h2>
         <p>気になる点等、お気軽にご連絡ください。</p>
         <p>お問い合わせには、フォームをご利用しております。</p>
-        <p class="btnWrap"><a class="btn" href="contact_form.html">問い合わせる</a></p>
+        <p class="btnWrap"><a class="btn" href="<?php echo home_url('/contact'); ?>">問い合わせる</a></p>
       </div>
     </section>
   </main>
