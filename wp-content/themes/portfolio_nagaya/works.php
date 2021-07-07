@@ -24,7 +24,7 @@ Template Name: works
           <p class="text">説明説明説明説明説明説明説明説明説明説明説明説明</p>
         </li>
         <li class="card">
-          <p class="work image3"><img src="<?php echo get_template_directory_uri(); ?>s/assets/image/christin-hume-08tX2fsuSLg-unsplash.jpg" alt="beer4"></p>
+          <p class="work image3"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/christin-hume-08tX2fsuSLg-unsplash.jpg" alt="beer4"></p>
           <p class="text">説明説明説明説明説明説明説明説明説明説明説明説明</p>
         </li>
       </ul>
