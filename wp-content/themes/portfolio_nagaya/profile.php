@@ -7,7 +7,7 @@ Template Name: profile
 <?php get_header(); ?>
 
 <main>
-  <section class="profile">
+  <section class="profile single">
     <div class="wrapper">
       <h2>- PROFILE -</h2>
       <div class="profileItems">
