@@ -6,7 +6,7 @@ Template Name: works
 <?php get_header(); ?>
 
 <main>
-  <section class="worksSingle single">
+  <section class="worksList single">
     <div class="wrapper">
       <h2>- WORKS -</h2>
       <p class="explanation">説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明</p>

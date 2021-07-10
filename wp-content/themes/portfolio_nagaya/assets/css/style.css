@@ -26,6 +26,10 @@ h1, h2, h3 {
   margin: 0;
 }
 
+h3 {
+  font-size: 24px;
+}
+
 p {
   margin: 0;
 }
@@ -269,28 +273,52 @@ main .explanation {
 }
 
 /*----------------------------------------*/
-/* workssingle */
+/* worksList */
 /*----------------------------------------*/
-.worksSingle .cards {
+.worksList .cards {
   justify-content: space-between;
 }
 
-.worksSingle .card {
+.worksList .card {
   width: 45%;
 }
 
-.worksSingle .card .text {
+.worksList .card .text {
   margin-top: 30px;
   padding: 0 20px;
   text-align: left;
 }
 
-.worksSingle .card:nth-child(n+3) {
+.worksList .card:nth-child(n+3) {
   margin-top: 50px;
 }
 
+.worksList .wrapper {
+  padding: 0;
+}
+
+/*----------------------------------------*/
+/* worksSngle */
+/*----------------------------------------*/
+.worksSingle img {
+  max-width: 980px;
+  height: auto;
+}
+
 .worksSingle .wrapper {
-  padding: 50px;
+  padding: 0;
+}
+
+.worksSingle .thumbnail {
+  margin-top: 50px;
+}
+
+.worksSingle .mainText {
+  margin-top: 50px;
+}
+
+.worksSingle .text {
+  margin-top: 30px;
 }
 
 /*----------------------------------------*/
@@ -322,7 +350,6 @@ main .explanation {
 }
 
 .profile h3 {
-  font-size: 24px;
   text-align: center;
 }
 
@@ -683,7 +710,7 @@ footer p {
     width: 45%;
   }
 
-  .worksSingle .wrapper {
+  .worksList .wrapper {
     padding: 30px;
   }
 
@@ -729,11 +756,11 @@ footer p {
     margin-top: 50px;
   }
 
-  .worksSingle .card {
+  .worksList .card {
     width: 100%;
   }
 
-  .worksSingle .card + .card {
+  .worksList .card + .card {
     margin-top: 50px;
   }
 

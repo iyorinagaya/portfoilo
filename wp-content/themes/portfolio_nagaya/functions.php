@@ -11,6 +11,7 @@ function add_scripts() {
 add_action('wp_enqueue_scripts', 'add_scripts');
 
 function add_theme_setup() {
+  add_theme_support('post-thumbnails');
   register_nav_menus(
     array(
       'global' => 'グローバル',
