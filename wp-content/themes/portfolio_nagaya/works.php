@@ -34,8 +34,6 @@ Template Name: works
       pagination($myQuery->max_num_pages);
       ?>
     </div>
-    
-
   </section>
 </main>
 

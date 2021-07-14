@@ -39,6 +39,7 @@
           <a href="<?php the_permalink(); ?>">
             <p class="work"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>" alt="beer3"></p>
           </a>
+          <p class="text"><?php the_title(); ?></p>
         </li>
         <?php
             endwhile;

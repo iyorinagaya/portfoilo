@@ -268,6 +268,10 @@ main .explanation {
   justify-content: space-around;
 }
 
+.works .card .text {
+  margin-top: 30px;
+}
+
 .works .btn {
   margin-top: 90px;
 }
@@ -285,8 +289,6 @@ main .explanation {
 
 .worksList .card .text {
   margin-top: 30px;
-  padding: 0 20px;
-  text-align: left;
 }
 
 .worksList .card:nth-child(n+3) {
