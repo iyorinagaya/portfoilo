@@ -28,15 +28,23 @@
       <h2>- WORKS -</h2>
       <p class="explanation">説明説明説明説明説明説明説明説明説明説明説明説明説明説明</p>
       <ul class="cards">
+        <?php
+          $myQuery = subLoop(3);
+
+          if ($myQuery->have_posts()):
+            while ($myQuery->have_posts()):
+              $myQuery->the_post();
+        ?>
         <li class="card">
-          <p class="work"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/evgeniy-konev-M4DjXRLWdNA-unsplash.jpg" alt="beer1"></p>
+          <a href="<?php the_permalink(); ?>">
+            <p class="work"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>" alt="beer3"></p>
+          </a>
         </li>
-        <li class="card">
-          <p class="work"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/timothy-dykes-Lq1rOaigDoY-unsplash.jpg" alt="beer2"></p>
-        </li>
-        <li class="card">
-          <p class="work"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/jon-parry-C8eSYwQkwHw-unsplash.jpg" alt="beer3"></p>
-        </li>
+        <?php
+            endwhile;
+          endif;
+          wp_reset_postdata();
+        ?>
       </ul>
       <p class="btnWrap"><a class="btn" href="<?php echo home_url('/works'); ?>">もっと見る</a></p>
     </div>
