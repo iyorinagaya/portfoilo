@@ -12,7 +12,7 @@ Template Name: works
       <p class="explanation">説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明</p>
       <ul class="cards">
         <?php
-          $myQuery = subLoop(10);
+          $myQuery = subLoop(3);
 
           if ($myQuery->have_posts()):
             while ($myQuery->have_posts()):
@@ -31,7 +31,7 @@ Template Name: works
         ?>
       </ul>
       <?php
-      pagination($myQuery->max_num_pages);
+        pagination($myQuery->max_num_pages);
       ?>
     </div>
   </section>

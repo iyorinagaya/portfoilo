@@ -30,7 +30,7 @@ function subLoop($number) {
   $args = array(
     'post_type' => 'post',
     'posts_per_page' => $number,
-    'paged'=>get_query_var('paged'),
+    'paged' => get_query_var('paged'),
   );
 
   $myQuery = new WP_Query($args);

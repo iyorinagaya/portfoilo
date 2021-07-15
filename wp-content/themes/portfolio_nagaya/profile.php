@@ -25,7 +25,7 @@ Template Name: profile
                 <p>1. フロントエンド</p>
                 <ul class="skillList">
                   <li>HTML/CSS</li>
-                  <li>JavaScript (JQuery)</li>
+                  <li>JavaScript (jQuery)</li>
                   <li>WordPress</li>
                 </ul>
               </div>

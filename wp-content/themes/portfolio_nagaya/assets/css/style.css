@@ -46,6 +46,15 @@ main {
   padding: 50px 0 100px;
 }
 
+main{animation: fadeIn 2s ease 0s 1 normal;}
+  @keyframes fadeIn { from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* wrapper */
 .wrapper {
   margin: 0 auto;
@@ -169,6 +178,52 @@ main {
 .card img {
   width: 100%;
   height: auto;
+}
+
+.card {
+  transition-duration: 0.3s;
+}
+
+.card:hover{
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+}
+
+/* pager */
+.pagerWrap {
+  margin-top: 60px;
+}
+
+.pagerWrap .pageNav {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.pagerWrap .pageNav li+li {
+  margin-left: 10px;
+}
+
+.pagerWrap .pageNav a {
+  display: flex;
+  justify-content: center;
+  line-height: 22px;
+  max-height: 22px;
+  color: #333333;
+}
+
+.pagerWrap .pageNav .index a {
+  align-items: center;
+  background-color: #333333;
+  color: #ffffff;
+  width: 22px;
+  font-size: 12px;
+}
+
+.pagerWrap .pageNav .index.current a {
+  background-color: #ffffff;
+  color: #333333;
+  border: solid 1px #333333;
 }
 
 /*----------------------------------------*/
