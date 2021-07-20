@@ -49,16 +49,4 @@ $(function(){
   
   init();
 
-  // $(window).on('load scroll', function() {
-  //   const winScroll = $(window).scrollTop();
-  //   const winHeight = $(window).height();
-  //   const scrollPos = winScroll + (winHeight * 0.8);
-
-  //   $(".show").each(function() {
-  //     if($(this).offset().top < scrollPos) {
-  //       $(this).css({opacity: 1, transform: 'translate(0, 0)'});
-  //     }
-  //   });
-  // });
-
 });
