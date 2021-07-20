@@ -14,11 +14,8 @@
       <h2>- SITE OVERVIEW -</h2>
       <div class="text">
         <p>ご訪問いただきありがとうございます。</p>
-        <br>
         <p>IYORI NAGAYAのポートフォリオサイトです。</p>
-        <br>
         <p>フロントエンドのエンジニアとして、WEB制作等を行っています。</p>
-        <br>
         <p>私のプロフィール、スキル、制作物を掲載しておりますので、是非ご覧になっていただけたら嬉しいです。</p>
       </div>
     </div>
@@ -55,8 +52,7 @@
     <div class="wrapper">
       <h2>- CONTACT -</h2>
       <p class="text">気になる点等ございましたら、お気軽にご連絡ください。</p>
-      <br>
-      <p>お問い合わせにはフォームをご利用ください。</p>
+      <p class="text">お問い合わせにはフォームをご利用ください。</p>
       <p class="btnWrap"><a class="btn" href="<?php echo home_url('/contact'); ?>">問い合わせる</a></p>
     </div>
   </section>

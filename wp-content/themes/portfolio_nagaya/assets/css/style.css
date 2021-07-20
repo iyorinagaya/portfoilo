@@ -312,6 +312,10 @@ header .navItem:hover {
   margin-top: 50px;
 }
 
+.overview .text p + p {
+  margin-top: 20px;
+}
+
 /*----------------------------------------*/
 /* works */
 /*----------------------------------------*/
@@ -463,8 +467,12 @@ main .explanation {
   opacity: 0.9;
 }
 
-.contact .text {
-  margin-top: 30px;
+.contact .text:first-of-type {
+  margin-top: 40px;
+}
+
+.contact .text + .text {
+  margin-top: 20px;
 }
 
 .contact .btnWrap {
@@ -746,7 +754,7 @@ footer p {
   }
   
   header .navList {
-    padding-top: 30px;
+    padding-top: 40px;
     width: 96%;
     height: 100%;
     flex-wrap: wrap;
