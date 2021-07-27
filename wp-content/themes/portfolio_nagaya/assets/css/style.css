@@ -52,10 +52,13 @@ main{animation: fadeIn 2s ease 0s 1 normal;}
   }
 }
 
+section {
+  padding: 150px 0;
+}
+
 /* wrapper */
 .wrapper {
   margin: 0 auto;
-  padding: 150px 0;
   text-align: center;
 }
 
@@ -461,7 +464,6 @@ main .explanation {
   background-image: url(../image/tynebridge.jpg);
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
 }
 
 .contact .wrapper {
