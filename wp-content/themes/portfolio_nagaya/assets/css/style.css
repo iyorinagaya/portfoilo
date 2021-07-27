@@ -81,6 +81,10 @@ section {
   opacity: 0.8;
 }
 
+.btnWrap {
+  margin-top: 50px;
+}
+
 /* humburger */
 .toggleBtn {
   display: none;
@@ -337,10 +341,6 @@ main .explanation {
   margin-top: 30px;
 }
 
-.works .btn {
-  margin-top: 90px;
-}
-
 /*----------------------------------------*/
 /* worksList */
 /*----------------------------------------*/
@@ -480,10 +480,6 @@ main .explanation {
   margin-top: 20px;
 }
 
-.contact .btnWrap {
-  margin-top: 80px;
-}
-
 /*----------------------------------------*/
 /* contact_form */
 /*----------------------------------------*/
@@ -524,11 +520,6 @@ main .explanation {
   outline: none;
   display: block;
 }
-
-.formWrapper .btnWrap {
-  margin-top: 50px;
-}
-
 
 form .btn {
   width: 250px;
@@ -586,7 +577,6 @@ form .btn {
 }
 
 .confirmWrapper .btnWrap {
-  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
@@ -616,10 +606,6 @@ form .btn {
 
 .completeWrapper .text {
   margin: 24px auto 0;
-}
-
-.completeWrapper .btnWrap {
-  margin-top: 40px;
 }
 
 .completeWrapper .btn {
