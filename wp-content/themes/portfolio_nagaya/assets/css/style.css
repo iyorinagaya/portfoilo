@@ -146,19 +146,6 @@ main{animation: fadeIn 2s ease 0s 1 normal;}
   cursor: pointer;
 }
 
-/* scroll animation */
-.slideLeft {
-	opacity: 0;
-	transform: translate(-200px, 0);
-	transition: all 1s ease-out;
-}
-
-.slideRight {
-	opacity: 0;
-	transform: translate(200px, 0);
-	transition: all 1s ease-out;
-}
-
 /* cards */
 .cards {
   display: flex;
@@ -303,6 +290,14 @@ header .navItem:hover {
 
 .overview .wrapper {
   max-width: 600px;
+  opacity: 0;
+	transform: translate(-200px, 0);
+	transition: all 1s ease-out;
+}
+
+.overview .wrapper.slideIn {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .overview .text {
@@ -316,6 +311,17 @@ header .navItem:hover {
 /*----------------------------------------*/
 /* works */
 /*----------------------------------------*/
+.works .wrapper {
+  opacity: 0;
+	transform: translate(200px, 0);
+	transition: all 1s ease-out;
+}
+
+.works .wrapper.slideIn {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 main .explanation {
   margin-top: 40px;
 }

@@ -32,8 +32,10 @@ $(function(){
       const scrollPos = winScroll + (winHeight * 0.8);
 
       $(".show").each(function() {
-        if($(this).offset().top < scrollPos) {
-          $(this).css({opacity: 1, transform: 'translate(0, 0)'});
+        const $this = $(this);
+        
+        if($this.offset().top < scrollPos) {
+          $this.addClass('slideIn');
         }
       });
     }

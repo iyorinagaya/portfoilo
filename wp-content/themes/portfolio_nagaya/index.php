@@ -10,7 +10,7 @@
     </div>
   </div>
   <section class="overview">
-    <div class="wrapper show slideLeft">
+    <div class="wrapper show">
       <h2>- SITE OVERVIEW -</h2>
       <div class="text">
         <p>ご訪問いただきありがとうございます。</p>
@@ -21,7 +21,7 @@
     </div>
   </section>
   <section class="works">
-    <div class="wrapper show slideRight">
+    <div class="wrapper show">
       <h2>- WORKS -</h2>
       <p class="explanation">説明説明説明説明説明説明説明説明説明説明説明説明説明説明</p>
       <ul class="cards">
