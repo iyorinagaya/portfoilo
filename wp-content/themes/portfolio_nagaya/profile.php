@@ -7,7 +7,7 @@ Template Name: profile
 <?php get_header(); ?>
 
 <main>
-  <section class="profile">
+  <section class="profile single">
     <div class="wrapper">
       <h2>- PROFILE -</h2>
       <div class="profileItems">
@@ -25,7 +25,7 @@ Template Name: profile
                 <p>1. フロントエンド</p>
                 <ul class="skillList">
                   <li>HTML/CSS</li>
-                  <li>JavaScript (JQuery)</li>
+                  <li>JavaScript (jQuery)</li>
                   <li>WordPress</li>
                 </ul>
               </div>

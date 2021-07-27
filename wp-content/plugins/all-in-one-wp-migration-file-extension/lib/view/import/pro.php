@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (C) 2014-2019 ServMask Inc.
+ * Copyright (C) 2014-2020 ServMask Inc.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php _e( 'Maximum upload file size:', AI1WM_PLUGIN_NAME ); ?>
 <?php if ( ( $max_file_size = apply_filters( 'ai1wm_max_file_size', AI1WM_MAX_FILE_SIZE ) ) ) : ?>
-	<span class="ai1wm-max-upload-size"><?php echo size_format( $max_file_size ); ?></span>
+	<span class="ai1wm-max-upload-size"><?php echo ai1wm_size_format( $max_file_size ); ?></span>
 	<span class="ai1wm-unlimited-import">
 		<a href="https://servmask.com/products/unlimited-extension" target="_blank" class="ai1wm-label">
 			<i class="ai1wm-icon-notification"></i>
